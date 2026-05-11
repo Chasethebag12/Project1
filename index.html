@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">GYM</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#coaches">Coaches</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#quotes">Motivation</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('images/foto%20Ai.jpg');"></div>
+            <div class="slide" style="background-image: url('images/Cbum.jpg');"></div>
+            <div class="slide" style="background-image: url('images/gym%20girl.jpg');"></div>
+            <div class="slide" style="background-image: url('images/another%20one.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content animate-hero">
+            <h1>Welcome to <span class="highlight">Our Gym</span></h1>
+            <p>Strong. Disciplined. Results.</p>
+            <a href="#pricing" class="btn">Join Now</a>
+        </div>
+        <button class="slide-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slide-btn next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="slide-dots" id="slideDots"></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="stat">
+            <span class="counter" data-target="500">0</span><span class="counter-plus">+</span>
+            <p>Happy Members</p>
+        </div>
+        <div class="stat">
+            <span class="counter" data-target="3">0</span>
+            <p>Expert Coaches</p>
+        </div>
+        <div class="stat">
+            <span class="counter" data-target="10">0</span><span class="counter-plus">+</span>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat">
+            <span class="counter" data-target="15">0</span>
+            <p>Weekly Classes</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Weight Training</h3>
+                <p>Modern equipment to build strength and muscle.</p>
+            </div>
+            <div class="card">
+                <h3>Cardio</h3>
+                <p>Treadmills, bikes, and top cardio machines.</p>
+            </div>
+            <div class="card">
+                <h3>Group Classes</h3>
+                <p>Yoga, Zumba, Boxing and much more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COACHES -->
+    <section id="coaches" class="section dark">
+        <h2 class="section-title">Our Coaches</h2>
+        <div class="cards">
+            <div class="card coach-card">
+                <img src="images/Cbum.jpg" alt="Coach Jean" class="coach-img">
+                <h3>Coach Jean</h3>
+                <p>Weight Training Specialist — 10 years of experience</p>
+            </div>
+            <div class="card coach-card">
+                <img src="images/gym%20girl.jpg" alt="Coach Marie" class="coach-img">
+                <h3>Coach Marie</h3>
+                <p>Yoga & Cardio Specialist — 7 years of experience</p>
+            </div>
+            <div class="card coach-card">
+                <img src="images/another%20one.jpg" alt="Coach Marc" class="coach-img">
+                <h3>Coach Dora</h3>
+                <p>Boxing & Martial Arts Specialist — 8 years of experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+        <h2 class="section-title">Membership Plans</h2>
+        <div class="cards">
+            <div class="card price-card">
+                <h3>Basic</h3>
+                <p class="price">$29 / month</p>
+                <ul>
+                    <li>Gym Access</li>
+                    <li>Locker Room</li>
+                </ul>
+            </div>
+            <div class="card price-card featured">
+                <h3>Standard</h3>
+                <p class="price">$59 / month</p>
+                <ul>
+                    <li>Gym Access</li>
+                    <li>2 Classes per week</li>
+                    <li>Locker Room</li>
+                </ul>
+            </div>
+            <div class="card price-card">
+                <h3>Premium</h3>
+                <p class="price">$99 / month</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>Unlimited Classes</li>
+                    <li>Personal Coach</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section dark">
+        <h2 class="section-title">Opening Hours</h2>
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening</th>
+                    <th>Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday – Friday</td><td>6:00 AM</td><td>10:00 PM</td></tr>
+                <tr><td>Saturday</td><td>7:00 AM</td><td>8:00 PM</td></tr>
+                <tr><td>Sunday</td><td>8:00 AM</td><td>4:00 PM</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- QUOTES -->
+    <section id="quotes" class="section quotes-section">
+        <h2 class="section-title">Stay Motivated</h2>
+        <div class="quotes-grid">
+            <div class="quote-card">
+                <p class="quote-text">"The only bad workout is the one that didn't happen."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Push yourself because no one else is going to do it for you."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Success starts with self-discipline."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Your body can stand almost anything. It's your mind you have to convince."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Don't stop when you're tired. Stop when you're done."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Wake up. Work out. Look hot. Kick ass."</p>
+                <span class="quote-author">— Unknown</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section dark">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/foto%20Ai.jpg" alt="Gym photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Cbum.jpg" alt="Gym photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gym%20girl.jpg" alt="Gym photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/another%20one.jpg" alt="Gym photo 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p>📍 Address: Nassau, New Providence, Bahamas</p>
+                <p>📞 Phone: +1 (242) XXX-XXXX</p>
+                <p>📧 Email: info@gym.com</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/" target="_blank" class="social-icon instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" class="social-icon facebook" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://tiktok.com/" target="_blank" class="social-icon tiktok" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://youtube.com/" target="_blank" class="social-icon youtube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <h3 class="form-title">Get Started Today</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="objective">Your Fitness Goal</label>
+                    <select id="objective" name="objective" required>
+                        <option value="" disabled selected>Select your goal</option>
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="muscle-gain">Muscle Gain</option>
+                        <option value="endurance">Build Endurance</option>
+                        <option value="flexibility">Improve Flexibility</option>
+                        <option value="general-fitness">General Fitness</option>
+                        <option value="stress-relief">Stress Relief</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about yourself..."></textarea>
+                </div>
+                <input type="submit" class="submit-btn" value="SUBMIT">
+                <p class="form-success" id="formSuccess">✅ Message sent! We'll contact you soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://instagram.com/" target="_blank" class="social-icon instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="social-icon facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://tiktok.com/" target="_blank" class="social-icon tiktok" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com/" target="_blank" class="social-icon youtube" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p>&copy; 2026 Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
